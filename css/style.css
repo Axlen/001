@@ -1,8 +1,8 @@
-body{
-   background-color: #e9e9e9; 
+body {
+    background-color: #e9e9e9;
 }
 
-nav{
+nav {
     width: auto;
     height: 50px;
     background-color: #5e889e;
@@ -12,20 +12,22 @@ nav{
     border-bottom-right-radius: 5px;
 }
 
-.nav-icon, .nav-brand, .nav-header{
+.nav-icon,
+.nav-brand,
+.nav-header {
     display: inline;
 }
 
-.nav-icon img{
+.nav-icon img {
     padding: 10px 10px;
 }
 
-.nav-brand{
+.nav-brand {
     position: relative;
     top: -20px;
 }
 
-.nav-brand-title{
+.nav-brand-title {
     font-family: 'Helvetica', serif;
     font-size: 20px;
     font-weight: 800;
@@ -34,29 +36,27 @@ nav{
     font-style: italic;
 }
 
-.nav-menu{
+.nav-menu {
     float: right;
-     
 }
 
-.nav-menu li{
+.nav-menu li {
     display: inline;
 }
 
-.nav-menu-item{
+.nav-menu-item {
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Helvetica', serif;
     font-weight: 500;
     /*padding: -10px 0 5px 0;*/
-    
 }
 
-.nav-menu-item:first-child{
+.nav-menu-item:first-child {
     margin-left: 0;
 }
 
-.nav-links{
+.nav-links {
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
@@ -64,75 +64,116 @@ nav{
     color: #d5d5d5;
 }
 
-.nav-links:hover{
+.nav-links {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 5px 5px 5px;
+    color: #d5d5d5;
+}
+
+.nav-links:hover {
     font-weight: 600;
     color: #000;
     opacity: .7;
 }
 
-.dropdown-menu{
-    
-}
 
-.dropdown-menu-item{
+.dropdown-menu {
     display: none;
 }
 
-div.container{
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+
+div.container {
     margin-left: 40px;
     margin-right: 40px;
     display: table;
-    
 }
 
+
 /*Slideshow*/
-.slide{
+
+.slide {
     display: none;
+    position: relative;
+}
+
+.active-slide {
+    display: block;
 }
 
 
 /*Slideshow navigation*/
-.slideshow-nav{
+
+.slideshow-nav {
     display: inline-block;
-    margin: 0 auto;
+    text-align: center;
     width: 100%;
-    
 }
 
-.arrow{
+.slideshow-nav li{
+    display: inline;
+    margin-top: -15px;
+}
+
+.arrow {
     display: inline;
     margin: auto;
 }
 
-.slideshow img{
+.arrow-prev {
+    margin-right: 45px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+}
+
+.arrow-next {
+    margin-left: 45px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+}
+
+.slideshow img {
     border-radius: 10px;
 }
 
-.dot-list{
+.dot-list {
     list-style: none;
-    display: inline;
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
-.dot{
+.dot {
     text-decoration: none;
     float: left;
     color: gray;
     margin: 0 3px;
     font-size: 30px;
+    vertical-align: top;
 }
 
-.active-dot{
+.dot-list li.active-dot {
     color: black;
 }
 
+
 /*Teksty dolne*/
-.articles{
+
+.articles {
     width: 100%;
     height: auto;
     display: inline-block;
 }
 
-.box{
+.box {
     width: 31.5%;
     display: inline;
     float: left;
@@ -143,50 +184,49 @@ div.container{
     padding: 0 5px 10px 5px;
 }
 
-.box:first-child{
+.box:first-child {
     margin-left: auto;
 }
 
-.box:nth-child(2n-1){
+.box:nth-child(2n-1) {
     margin-left: auto;
     margin-right: auto;
 }
 
-.box:last-child{
-   margin-right: auto; 
+.box:last-child {
+    margin-right: auto;
 }
 
-.box h3{
+.box h3 {
     margin-left: 10px;
     font-size: 26px;
     padding-top: 10px;
 }
 
-.box img{
+.box img {
     float: left;
     margin-left: 10px;
     margin-right: 15px;
 }
 
-.box img:last-child{
+.box img:last-child {
     float: right;
     margin-left: 15px;
     margin-right: 10px;
 }
 
-.box p{
+.box p {
     text-align: justify;
     margin: 0 10px 10px 10px;
 }
 
 .box_text::first-letter {
     color: #5e889e;
-    font-size:150%;
+    font-size: 150%;
     margin-left: 1em;
 }
 
-
-.read-more{
+.read-more {
     float: right;
     margin-right: 10px;
     border: 1px solid #5e889e;
@@ -196,13 +236,15 @@ div.container{
     color: #5e889e;
 }
 
-.read-more:hover{
+.read-more:hover {
     background-color: #5e889e;
     color: #fff;
 }
 
+
 /*Footer*/
-footer{
+
+footer {
     display: block;
     width: 100%;
     height: 30px;
@@ -212,10 +254,9 @@ footer{
     margin-bottom: -2px;
 }
 
-footer p{
+footer p {
     color: #d5d5d5;
     text-align: right;
     padding: 10px 10px 10px 0;
     font-size: 10px;
 }
-
