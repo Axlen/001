@@ -1,3 +1,7 @@
+body{
+   background-color: #e9e9e9; 
+}
+
 nav{
     width: auto;
     height: 50px;
@@ -7,12 +11,26 @@ nav{
     border-radius: 7px;
 }
 
-.nav-icon{
+.nav-icon, .nav-brand, .nav-header{
     display: inline;
 }
 
 .nav-icon img{
     padding: 10px 10px;
+}
+
+.nav-brand{
+    position: relative;
+    top: -20px;
+}
+
+.nav-brand-title{
+    font-family: 'Helvetica', serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #5e889e;
+    text-decoration: none;
+    font-style: italic;
 }
 
 .nav-menu{
@@ -46,31 +64,72 @@ nav{
 }
 
 .nav-links:hover{
-    text-decoration: underline;
-    color: #fff;
+    font-weight: 600;
+    color: #000;
+    opacity: .7;
 }
 
 .dropdown-menu{
-    visibility: hidden;
+    display:none;
 }
 
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+div.container{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: table;
+    
+}
+
+/*Slideshow*/
+.slide{
+    display: none;
+}
+
+.slideshow-nav{
+    display: table;
+    clear: both;
+    margin: 0 auto;
+}
+
+.arrow{
+    display: inline;
     float: left;
+    margin: auto;
+}
+
+.arrow-prev, .arrow-next{
+    display: inline;
+}
+
+.slideshow img{
+    border-radius: 10px;
+}
+
+.dot-list{
+    list-style: none;
+    display: inline;
+}
+
+.dot{
+    text-decoration: none;
+    display: inline;
+    float: left;
+    color: gray;
+}
+
+.active-dot{
+    color: black;
 }
 
 /*Teksty dolne*/
-.row{
+.articles{
     width: 100%;
+    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .box{
-    width: 30%;
+    width: 31.5%;
     display: inline;
     float: left;
     border: 1px solid #5e889e;
@@ -95,6 +154,8 @@ nav{
 
 .box h3{
     margin-left: 10px;
+    font-size: 26px;
+    padding-top: 10px;
 }
 
 .box p{
@@ -103,13 +164,28 @@ nav{
     margin-right: 10px;
 }
 
+.box_text::first-letter {
+    color: #5e889e;
+    font-size:150%;
+    margin-left: 1em;
+}
+
+
+
 .read-more{
     float: right;
     margin-right: 10px;
     border: 1px solid #5e889e;
     border-radius: 3px;
-    padding: 3px;
+    padding: 5px;
     text-decoration: none;
     color: #5e889e;
+}
+
+
+
+.read-more:hover{
+    background-color: #5e889e;
+    color: #fff;
 }
 
