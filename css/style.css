@@ -4,7 +4,7 @@ nav{
     background-color: #d5d5d5;
     margin-top: -5px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .nav-icon{
@@ -30,6 +30,7 @@ nav{
     font-family: 'Helvetica', serif;
     font-weight: 500;
     /*padding: -10px 0 5px 0;*/
+    
 }
 
 .nav-menu-item:first-child{
@@ -41,17 +42,74 @@ nav{
     text-align: center;
     vertical-align: middle;
     padding: 5px 5px 5px 5px;
-    color: #545454;
+    color: #5e889e;
 }
 
 .nav-links:hover{
-    border: 1px solid red;
-    border-radius: 3px;
+    text-decoration: underline;
     color: #fff;
-    background-color: red;
-    position: relative;
 }
 
 .dropdown-menu{
     visibility: hidden;
 }
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    float: left;
+}
+
+/*Teksty dolne*/
+.row{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    width: 30%;
+    display: inline;
+    float: left;
+    border: 1px solid #5e889e;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 5px;
+}
+
+.box:first-child{
+    
+}
+
+.box:nth-child(2n-1){
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box:last-child{
+    
+}
+
+.box h3{
+    margin-left: 10px;
+}
+
+.box p{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.read-more{
+    float: right;
+    margin-right: 10px;
+    border: 1px solid #5e889e;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: #5e889e;
+}
+
