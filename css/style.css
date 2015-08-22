@@ -78,15 +78,31 @@ nav {
     opacity: .7;
 }
 
-
 .dropdown-menu {
     display: none;
+    height: 100%;
+    width: 55%;
+    margin: 5px 0;
+    background-color: #5e889e;
+    float: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+.dropdown-menu li{
+    display: block;
+    position: relative;
 }
 
 .dropdown-menu li a {
-  color: #898989;
-  padding: 6px 20px;
-  font-weight: 300;
+    color: #fff;
+    padding: 6px 0px;
+    margin: 0 10px;
+    font-weight: 200;
+    font-size: 14px;
+    float: right;
+    text-decoration: none;
 }
 
 div.container {
@@ -97,7 +113,6 @@ div.container {
 
 
 /*Slideshow*/
-
 .slide {
     display: none;
     position: relative;
@@ -116,7 +131,7 @@ div.container {
     width: 100%;
 }
 
-.slideshow-nav li{
+.slideshow-nav li {
     display: inline;
     margin-top: -15px;
 }
