@@ -1,9 +1,11 @@
 var main = function() {
+
+/*Funkcjonalność dropdown-menu*/
   $('.dropdown-toggle').click(function() {
     $('.dropdown-menu').toggle();
   });
 
-  
+/*Slideshow-menu*/
   $('.arrow-next').click(function() {
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
